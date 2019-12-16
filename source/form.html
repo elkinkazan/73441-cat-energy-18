@@ -12,7 +12,9 @@
 </head>
 
 <body>
+
   <div class="page-container">
+
   <header class="page-header">
     <div class="header-wrapper">
       <a href="" class="page-header__logo">
@@ -40,6 +42,71 @@
       </ul>
     </nav>
   </header>
+
+  <main class="page-main">
+
+    <section class="selection">
+      <h1 class="selection__title">Подбор программы</h1>
+      <p class="selection__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="selection__form" id="selection__form-id" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="selection__form-info">
+          <label class="selection__form-info-label" for="cat_name">Имя:*</label>
+          <input class="selection__form-info-input" type="text" name="cat_name" id="cat_name" placeholder="Барсик"></br>
+
+          <label class="selection__form-info-label" for="cat_weight">Вес (кг):*</label>
+          <input class="selection__form-info-input" type="text" name="cat_weight" id="cat_weight" placeholder="7"></br>
+
+          <label class="selection__form-info-label" for="cat_age">Возраст (лет):</label>
+          <input class="selection__form-info-input" type="text" name="cat_age" id="cat_age" placeholder="7"></br>
+        </fieldset>
+
+        <fieldset class="selection__form-program">
+          <input class="selection__form-program-input" type="radio" name="program_options" id="losing_weight" checked>
+          <label class="selection__form-program-label" for="losing_weight">Похудение</label></br>
+
+          <input class="selection__form-program-input" type="radio" name="program_options" id="gain_weight">
+          <label class="selection__form-program-label" for="gain_weight">Набор массы</label></br>
+
+          <input class="selection__form-program-input" type="radio" name="program_options" id="dont_know">
+          <label class="selection__form-program-label" for="dont_know">Не знаю (нужен совет)</label></br>
+        </fieldset>
+
+        <fieldset class="selection__form-contactinfo">
+          <h2>Контактные данные (владельца кота)</h2>
+          <label class="selection__form-contactinfo-label" for="cat_email">email:*</label>
+          <input class="selection__form-contactinfo-input" type="text" name="cat_email" id="cat_email" placeholder="kuklachev@gmail.com"></br>
+
+          <label class="selection__form-contactinfo-label" for="cat_phone">телефон:*</label>
+          <input class="selection__form-contactinfo-input" type="text" name="cat_phone" id="cat_phone" placeholder="8(960)900-60-90"></br>
+        </fieldset>
+
+        <fieldset class="selection__form-comments">
+          <h2>Комментарий</h2>
+          <textarea class="selection__form-comments_textarea" id="comments" name="comments" rows="8" cols="20" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset class="selection__form-addition">
+          <h2>Дополнительно</h2>
+
+          <input class="selection__form-addition-input" type="checkbox" name="sweetener" id="sweetener" checked>
+          <label class="selection__form-addition-label" for="sweetener">Сахарозаменитель</label></br>
+
+          <input class="selection__form-addition-input" type="checkbox" name="water" id="water">
+          <label class="selection__form-addition-label" for="water">Питьевая вода</label></br>
+
+          <input class="selection__form-addition-input" type="checkbox" name="milk" id="milk">
+          <label class="selection__form-addition-label" for="milk">Молоко</label></br>
+
+          <input class="selection__form-addition-input" type="checkbox" name="vitamins" id="vitamins">
+          <label class="selection__form-addition-label" for="vitamins">Витамины</label></br>
+        </fieldset>
+
+        <button class="selection__form-button" type="submit" form="selection__form-id">Отправить заявку</button>
+        <p class="selection__form-text">* - Обязательные поля</p>
+      </form>
+    </section>
+
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__address-wrapper">
@@ -79,6 +146,8 @@
       </div>
     </div>
   </footer>
+
   </div>
+
 </body>
 </html>
