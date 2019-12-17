@@ -1,0 +1,121 @@
+.catalog__header{
+  color: #111111;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 32px 40px 35px 22px;
+  margin: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.catalog__list-item{
+  padding: 25px 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.catalog__wrapper{
+  display: flex;
+}
+
+.catalog__list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__order{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #68b738;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 13px 116px 12px 117px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.catalog__img{
+  width: 140px;
+  height: 144px;
+}
+
+.catalog__table-header{
+color: #111111;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.catalog__table{
+color: #444444;
+font-family: "Arial MT";
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+}
+
+.catalog__table-data{
+  min-width: 70px;
+}
+
+.catalog__table-r{
+  text-align: right;
+}
+
+/* планшетная версия */
+@media (min-width: 768px) {
+  .catalog__header{
+    text-align: left;
+    padding-top: 0;
+    font-size: 60px;
+    line-height: 60px;
+    border-bottom: none;
+  }
+
+  .catalog__list{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog__list-item{
+    width: 50%;
+    border-bottom: none;
+  }
+
+  .catalog__wrapper{
+    flex-direction: column;
+  }
+
+  .catalog__list-item:nth-child(odd) .catalog__img{
+    margin-top: 36px;
+    min-width: 324px;
+    height: 172px;
+  }
+
+  .catalog__list-item:nth-child(even) .catalog__img{
+    min-width: 324px;
+    height: 208px;
+  }
+
+  .catalog__table-wrapper{
+    min-width: 324px;
+  }
+
+  .catalog__table{
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .catalog__order{
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .catalog__table-data{
+    min-width: 142px;
+  }
+}
