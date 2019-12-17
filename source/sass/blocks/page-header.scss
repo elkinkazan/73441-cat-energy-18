@@ -12,7 +12,8 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.page-header__logo,.page-header__menu {
+.page-header__logo,
+.page-header__menu {
   text-decoration: none;
   min-height: 65px;
   width: 100%;
@@ -56,7 +57,6 @@
 
 /* планшетная версия */
 @media (min-width: 768px) {
-
   .page-header {
     min-height: 144px;
     flex-direction: row;
@@ -64,30 +64,33 @@
     align-items: flex-start;
   }
 
-  .page-header__menu-img{
-      position: absolute;
-      clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-      padding: 0;
-      border: 0;
-      height: 1px;
-      width: 1px;
-      overflow: hidden;
+  .page-header__menu-img {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
   }
 
-  .main-nav__list li{
+  .main-nav__list li {
     display: inline-block;
     padding-left: 36px;
   }
 
-  .main-nav{
+  .main-nav {
     padding-top: 17px;
   }
 
-  .header-wrapper, .site-list__item1, .site-list__item2, .site-list__item3 {
+  .header-wrapper,
+  .site-list__item1,
+  .site-list__item2,
+  .site-list__item3 {
     border-bottom: none;
   }
 
-  .site-list__link{
+  .site-list__link {
     color: #222222;
     font-size: 18px;
     font-weight: 400;
@@ -96,19 +99,19 @@
     padding-bottom: 12px;
   }
 
-  .site-list__item1{
+  .site-list__item1 {
     padding-top: 42px;
     padding-left: 96px;
     padding-bottom: 20px;
   }
 
-  .site-list__item2{
+  .site-list__item2 {
     padding-top: 42px;
     padding-left: 36px;
     padding-bottom: 20px;
   }
 
-  .site-list__item3{
+  .site-list__item3 {
     padding-top: 42px;
     padding-left: 38px;
     padding-bottom: 20px;
@@ -122,14 +125,13 @@
     padding-left: 30px;
   }
 
-  .site-list__link--active{
-    border-bottom: 1px solid #68b738;;
+  .site-list__link--active {
+    border-bottom: 1px solid #68b738;
   }
 }
 
 /* десктопная версия */
 @media (min-width: 1300px) {
-
   .page-header {
     min-width: 1300px;
     min-height: 113px;
@@ -144,46 +146,41 @@
     padding-left: 70px;
   }
 
-
-  .site-list__item1{
+  .site-list__item1 {
     padding-top: 77px;
     padding-left: 440px;
     padding-bottom: 29px;
   }
 
-  .site-list__item2{
+  .site-list__item2 {
     padding-top: 77px;
     padding-left: 37px;
     padding-bottom: 29px;
   }
 
-  .site-list__item3{
+  .site-list__item3 {
     padding-top: 77px;
     padding-left: 35px;
     padding-bottom: 29px;
   }
 
-  .site-list__link{
+  .site-list__link {
     color: #ffffff;
     font-size: 20px;
   }
 
-  .site-list__link--active{
+  .site-list__link--active {
     border-bottom: #ffffff;
   }
 
-  .main-nav{
-    position: relative;
-  }
-
-  .main-nav{
+  .main-nav {
+    //position: relative;
     position: absolute;
-    background: url(../img/index-background-desktop@1x.jpg) no-repeat;
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
     background-size: cover;
     display: block;
     width: 720px;
     height: 696px;
     left: 50%;
   }
-
 }

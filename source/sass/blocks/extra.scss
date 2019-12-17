@@ -1,17 +1,17 @@
-.extra__list{
+.extra__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.extra__list-item{
+.extra__list-item {
   margin: 0 20px;
   border-bottom: 1px solid #ededed;
   padding-top: 14px;
   padding-bottom: 17px;
 }
 
-.extra__header{
+.extra__header {
   color: #111111;
   font-size: 24px;
   font-weight: 400;
@@ -25,18 +25,18 @@
   border-bottom: 1px solid #ededed;
 }
 
-.extra__header::after{
+.extra__header::after {
   content: "";
   position: absolute;
   margin-right: -20px;
-  right: 0px;
+  right: 0;
   bottom: 38px;
   width: 53px;
   height: 3px;
   background-color: #68b738;
 }
 
-.extra__item{
+.extra__item {
   color: #222222;
   font-size: 16px;
   font-weight: 400;
@@ -44,20 +44,20 @@
   text-transform: uppercase;
 }
 
-.extra__table{
+.extra__table {
   margin-bottom: 14px;
 }
 
-.extra__table-data:nth-child(2n+1){
+.extra__table-data:nth-child(2n+1) {
   width: 220px;
 }
 
-.extra__table-data:nth-child(even){
+.extra__table-data:nth-child(even) {
   width: 60px;
   text-align: right;
 }
 
-.extra__box-item{
+.extra__box-item {
   background: url("../img/gift-photo-mobile@1x.jpg");
   max-width: 100%;
   height: 289px;
@@ -66,19 +66,19 @@
   text-align: center;
 }
 
-.extra__box-pic{
+.extra__box-pic {
   fill: white;
   margin-top: 65px;
   margin-bottom: 65px;
   display: inline-block;
 }
 
-.extra__box-text{
+.extra__box-text {
   margin-top: 0;
   margin-left: 60px;
   margin-right: 61px;
   color: #ffffff;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

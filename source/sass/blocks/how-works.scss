@@ -13,7 +13,7 @@
   margin-bottom: 33px;
 }
 
-.how-works__list{
+.how-works__list {
   list-style-type: none;
   padding-left: 0;
   margin-left: 0;
@@ -43,19 +43,20 @@
   margin: 6px 10px 6px 0;
 }
 
-.how-works__number{
+.how-works__number {
   visibility: hidden;
 }
+
 /* планшетная версия */
 @media (min-width: 768px) {
-
   .how-works__list-item {
+    position: relative;
     flex-direction: column;
     max-width: 50%;
     margin-bottom: 87px;
   }
 
-  .how-works__list{
+  .how-works__list {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -66,28 +67,21 @@
     height: 80px;
   }
 
-  .how-works_article {
-    padding-left: 0px;
-  }
-
-  .how-works__title{
+  .how-works__title {
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
   }
 
-  .how-works_article{
-    font-family: "Arial";
+  .how-works_article {
+    padding-left: 0;
+    font-family: "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
   }
 
-  .how-works__list-item{
-    position: relative;
-  }
-
-  .how-works__number{
+  .how-works__number {
     visibility: visible;
     position: absolute;
     top: -40px;
@@ -104,20 +98,20 @@
 
 /* десктопная версия */
 @media (min-width: 1300px) {
-  .how-works{
+  .how-works {
     margin-left: 100px;
   }
 
-  .how-works__list{
+  .how-works__list {
     display: flex;
   }
 
-  .how-works__number{
+  .how-works__number {
     top: -40px;
     right: 20px;
   }
 
-  .how-works__list-item{
+  .how-works__list-item {
     max-width: 25%;
     margin-right: 30px;
   }
