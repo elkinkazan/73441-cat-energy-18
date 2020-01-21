@@ -31,7 +31,7 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  padding: 13px 116px 12px 117px;
+  padding: 13px 108px 12px 111px;
   text-align: center;
   cursor: pointer;
 }
@@ -61,15 +61,20 @@
   min-width: 70px;
 }
 
-.catalog__table-r {
+.catalog__table:nth-child(even) {
   text-align: right;
 }
 
 /* планшетная версия */
 @media (min-width: 768px) {
+  .catalog {
+    margin-left: 0;
+  }
+
   .catalog__header {
     text-align: left;
     padding-top: 0;
+    padding-left: 33px;
     font-size: 60px;
     line-height: 60px;
     border-bottom: none;
@@ -84,6 +89,20 @@
   .catalog__list-item {
     width: 50%;
     border-bottom: none;
+    padding: 58px 30px 0 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .catalog__list-item::after {
+    content: "";
+    position: absolute;
+    top: 142px;
+    left: 30px;
+    width: 324px;
+    height: 432px;
+    background: #f2f2f2;
+    z-index: -1;
   }
 
   .catalog__wrapper {
@@ -108,14 +127,89 @@
   .catalog__table {
     margin: 0 auto;
     padding: 0;
+    font-size: 16px;
+    border-collapse: collapse;
   }
 
   .catalog__order {
     display: inline-block;
     margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 38px;
+    padding: 13px 93px 12px 95px;
+    line-height: 1.25;
+  }
+
+  .catalog__table-header {
+    font-size: 20px;
   }
 
   .catalog__table-data {
-    min-width: 142px;
+    min-width: 124px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .catalog__table-data:nth-child(odd) {
+    text-align: left;
+  }
+
+  .catalog__table-raw {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+/* десктопная версия */
+@media (min-width: 1300px) {
+  .site-list__link-catalog {
+    color: #111111;
+  }
+
+  .catalog__header {
+    padding-left: 113px;
+    padding-bottom: 75px;
+    padding-top: 51px;
+  }
+
+  .catalog__list {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .catalog__list-item {
+    width: 25%;
+  }
+
+  .catalog__list-item:first-child {
+    margin-left: 80px;
+  }
+
+  .catalog__list-item:nth-child(5) {
+    margin-left: 80px;
+  }
+
+  .catalog__table-data {
+    min-width: 84.5px;
+  }
+
+  .catalog__order {
+    padding-left: 53px;
+    padding-right: 55px;
+  }
+
+  .catalog__list-item::after {
+    width: 245px;
+  }
+
+  .catalog__list-item:nth-child(odd) .catalog__img {
+    min-width: 245px;
+  }
+
+  .catalog__list-item:nth-child(even) .catalog__img {
+    min-width: 245px;
+  }
+
+  .catalog__table-wrapper {
+    min-width: 245px;
   }
 }

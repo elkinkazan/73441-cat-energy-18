@@ -89,7 +89,7 @@
 }
 
 .page-footer__wrapper {
-  background: url("../img/grey_back.png") center;
+  background-color: rgb(242, 242, 242);
 }
 
 .page-footer__copyright-name {
@@ -133,6 +133,7 @@
   }
 
   .page-footer__bottom {
+    background-color: rgb(242, 242, 242);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -141,6 +142,21 @@
   .page-footer__logo {
     margin: 0;
     padding-left: 20px;
+  }
+
+  .page-footer__fb-img {
+    width: 14px;
+    height: 28px;
+  }
+
+  .page-footer__insta-img {
+    width: 23px;
+    height: 23px;
+  }
+
+  .page-footer__vk-img {
+    width: 30px;
+    height: 16px;
   }
 }
 
